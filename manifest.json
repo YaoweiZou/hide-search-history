@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Search History",
+    "version": "1.0.0",
+    "description": "Hide Google search history from omnibox suggestions.",
+    "icons": {
+        "16": "./icons/icon.png",
+        "32": "./icons/icon.png",
+        "48": "./icons/icon.png",
+        "128": "./icons/icon.png"
+    },
+    "action": {
+        "default_popup": "info.html",
+        "default_icon": "./icons/icon.png"
+    },
+    "background": {
+        "service_worker": "worker.js",
+        "type": "module"
+    },
+    "permissions": [
+        "history"
+    ]
+}
